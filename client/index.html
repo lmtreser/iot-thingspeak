@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>IoT Básico</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Este es un documento HTML5">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/chota.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- JS -->
+    <script language="javascript" type="text/javascript" src="src/chart.min.js"></script>
+    <script language="javascript" type="text/javascript" src="src/axios.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section id="cabecera">
+            <header class="row">
+                <div class="col is-vertical-align">
+                    <h1 class="is-marginless">INTRODUCCIÓN AL IOT</h1>
+                </div>
+            </header>
+            <br>
+            <p><a target="blank" href="https://es.wikipedia.org/wiki/Internet_de_las_cosas"
+                    title="Definición de Wikipedia">Internet de las Cosas</a> (en inglés, Internet of Things, abreviado
+                IoT) es un concepto que se refiere a
+                una interconexión digital de objetos cotidianos con Internet. Es, en definitiva, la conexión de Internet
+                más con objetos que con personas. Si los objetos de la vida cotidiana tuvieran incorporadas etiquetas de
+                radio, podrían ser identificados y gestionados por otros equipos de la misma manera que si lo fuesen por
+                seres humanos.​
+                <br>Constituye un cambio radical en la calidad de vida de las personas en la sociedad, ofrece una gran
+                cantidad de nuevas oportunidades de acceso a datos, servicios específicos en la educación, seguridad,
+                asistencia sanitaria y en el transporte, entre otros campos.
+            </p>
+        </section>
+        <section id="graficos">
+            <h2>Aplicación utilizando ThingSpeak</h2>
+            <p><a target="blank" href="https://thingspeak.com">ThingSpeak</a> es un servicio de plataforma de análisis
+                de Internet de las Cosas que permite agregar, visualizar y
+                analizar flujos de datos en vivo en la nube. Puede enviar datos a ThingSpeak desde sus dispositivos,
+                crear una visualización instantánea de datos en vivo y enviar alertas.<br>El canal público que recibe
+                los datos desde el hardware utilizado en este ejemplo se puede acceder desde <a target="blank"
+                    href="https://thingspeak.com/channels/1328155">thingspeak.com/channels/1328155</a> y el código fuente
+                del proyecto está disponible en <a target="blank"
+                    href="https://github.com/lmtreser/iot-thingspeak">GitHub</a>.</p>
+            <h3>Gráficos con datos obtenidos desde la API de ThingSpeak</h3>
+            <div class="row">
+                <div class="col-11">
+                    <canvas id="cder"></canvas>
+                </div>
+
+                <div class="col-11">
+                    <canvas id="cizq"></canvas>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Script que grafica los datos -->
+    <script language="javascript" type="text/javascript" src="graficos.js"></script>
+    <!-- Script que consulta la API -->
+    <script language="javascript" type="text/javascript" src="get-api.js"></script>
+</body>
+
+</html>
