@@ -16,4 +16,8 @@ Para el desarrollo del cliente web se utilizó JavaScript junto a algunas biblio
 
 * **[Axios](https://axios-http.com/)**. Es un Cliente HTTP basado en promesas para [node.js](https://nodejs.org/) y el navegador. Es isomorfico (= puede ejecutarse en el navegador y nodejs con el mismo código base). En el lado del servidor usa el modulo nativo http de node.js, mientras que en el lado del cliente (navegador) usa XMLHttpRequests. 
 
-* **[Chota](https://jenil.github.io/chota/)**. Un micro (~3kb) framework de CSS ("chota" significa "pequeño" en idioma hindi.
+* **[Chota](https://jenil.github.io/chota/)**. Un micro (~3kb) framework de CSS ("chota" significa "pequeño" en idioma hindi).
+
+## Hardware
+
+El hardware que se encarga de recoger los datos y enviarlos a la nube está basado en una placa de bajo costo que incorpora un chip ESP8266 (NodeMCU v3) junto a dos sensores: DS18B20 para medir la temperatura ambiente y una LDR para obtener valores de tensión relacionados con el nivel de la luz ambiente. El sistema se alimenta con un cargador de celular (5V) reciclado.
