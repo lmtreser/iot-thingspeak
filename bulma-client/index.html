@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IoT Básico con ThingSpeak </title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <!-- JS -->
+    <script language="javascript" type="text/javascript" src="src/chart.min.js"></script>
+    <script language="javascript" type="text/javascript" src="src/axios.min.js"></script>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                Introducción al IoT
+            </h1>
+            <p class="subtitle">
+                Un caso de de aplicación de la plataforma ThingSpeak
+            </p>
+        </div>
+    </section>
+    <!-- Contenido -->
+    <section class="section">
+        <div class="content">
+            <p>
+                <a target=" blank" href="https://es.wikipedia.org/wiki/Internet_de_las_cosas"
+                    title="Definición de Wikipedia">Internet de las Cosas</a> (en inglés, Internet of Things,
+                abreviado
+                IoT) es un concepto que se refiere a
+                una interconexión digital de objetos cotidianos con Internet. Es, en definitiva, la conexión de
+                Internet
+                más con objetos que con personas. Si los objetos de la vida cotidiana tuvieran incorporadas
+                etiquetas de
+                radio, podrían ser identificados y gestionados por otros equipos de la misma manera que si lo fuesen
+                por
+                seres humanos.
+                <br>Constituye un cambio radical en la calidad de vida de las personas en la sociedad, ofrece una
+                gran
+                cantidad de nuevas oportunidades de acceso a datos, servicios específicos en la educación,
+                seguridad,
+                asistencia sanitaria y en el transporte, entre otros campos.
+            </p>
+            <h2>Aplicación utilizando ThingSpeak</h2>
+            <p><a target="blank" href="https://thingspeak.com">ThingSpeak</a> es un servicio de plataforma de
+                análisis
+                de Internet de las Cosas que permite agregar, visualizar y
+                analizar flujos de datos en vivo en la nube. Puede enviar datos a ThingSpeak desde sus dispositivos,
+                crear una visualización instantánea de datos en vivo y enviar alertas.<br>El canal público que
+                recibe
+                los datos desde el hardware utilizado en este ejemplo se puede acceder desde <a target="blank"
+                    href="https://thingspeak.com/channels/1328155">thingspeak.com/channels/1328155</a> y el código
+                fuente
+                del proyecto está disponible en <a target="blank"
+                    href="https://github.com/lmtreser/iot-thingspeak">GitHub</a>.</p>
+            <h3>Gráficos con datos obtenidos desde la API de ThingSpeak</h3>
+        </div>
+        <!-- Gráficos -->
+        <section class="section">
+            <div class="columns is-centered">
+                <div class="column">
+                    <canvas id="cder"></canvas>
+                </div>
+                <div class="column">
+                    <canvas id="cizq"></canvas>
+                </div>
+            </div>
+        </section>
+
+    </section>
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                Construido con <strong>Bulma</strong> y <strong>Chart.js</strong>. Código fuente licenciado bajo <a
+                    href="https://github.com/lmtreser/iot-thingspeak/blob/main/LICENSE">GPL3</a>. Contenido web
+                licenciado bajo <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="blank">CC
+                    BY-NC-SA 4.0</a>.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script que grafica los datos -->
+    <script language="javascript" type="text/javascript" src="graficos.js"></script>
+    <!-- Script que consulta la API -->
+    <script language="javascript" type="text/javascript" src="get-api.js"></script>
+
+</body>
+
+</html>
