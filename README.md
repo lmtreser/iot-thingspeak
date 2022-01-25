@@ -18,6 +18,8 @@ Para el desarrollo del cliente web se utilizó JavaScript junto a algunas biblio
 
 * **[Chota](https://jenil.github.io/chota/)**. Un micro (~3kb) framework de CSS ("chota" significa "pequeño" en idioma hindi).
 
+* **[Bulma](https://bulma.io/)**. Otro framework CSS utilizado para crear una variante del cliente. 
+
 ## Hardware
 
 El hardware que se encarga de recoger los datos y enviarlos a la nube está basado en una placa de bajo costo que incorpora un chip ESP8266 (NodeMCU v3) junto a dos sensores: DS18B20 para medir la temperatura ambiente y una LDR para obtener valores de tensión relacionados con el nivel de la luz ambiente. El sistema se alimenta con un cargador de celular (5V) reciclado.
