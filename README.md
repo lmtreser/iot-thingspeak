@@ -1,4 +1,4 @@
-# INTRODUCCIÓN AL IOT
+# "Internet of Things", una introducción
 
 [Internet de las Cosas](https://es.wikipedia.org/wiki/Internet_de_las_cosas) (en inglés, Internet of Things, abreviado IoT) es un concepto que se refiere a una interconexión digital de objetos cotidianos con Internet. Es, en definitiva, la conexión de Internet más con objetos que con personas. Si los objetos de la vida cotidiana tuvieran incorporadas etiquetas de radio, podrían ser identificados y gestionados por otros equipos de la misma manera que si lo fuesen por seres humanos.​
 Constituye un cambio radical en la calidad de vida de las personas en la sociedad, ofrece una gran cantidad de nuevas oportunidades de acceso a datos, servicios específicos en la educación, seguridad, asistencia sanitaria y en el transporte, entre otros campos.
@@ -6,6 +6,7 @@ Constituye un cambio radical en la calidad de vida de las personas en la socieda
 ## IoT con ThingSpeak
 
 [ThingSpeak](https://thingspeak.com/) es un servicio de plataforma de análisis de Internet de las Cosas que permite agregar, visualizar y analizar flujos de datos en vivo en la nube. Puede enviar datos a ThingSpeak desde sus dispositivos, crear una visualización instantánea de datos en vivo y enviar alertas.
+
 El canal público que recibe los datos desde el hardware utilizado en este ejemplo se puede acceder desde [thingspeak.com/channels/1328155](https://thingspeak.com/channels/1328155), el código fuente del proyecto está disponible en [GitHub](https://github.com/lmtreser/iot-thingspeak) y una versión online se ejecuta desde mi [blog](https://www.automatismos-mdq.com.ar/blog/tools/iot/).
 
 ## Tecnologías utilizadas
@@ -25,7 +26,7 @@ Para el desarrollo del cliente web se utilizó JavaScript junto a algunas biblio
 El hardware que se encarga de recoger los datos y enviarlos a la nube está basado en una placa de bajo costo que incorpora un chip ESP8266 (NodeMCU v3) junto a dos sensores: DS18B20 para medir la temperatura ambiente y una LDR para obtener valores de tensión relacionados con el nivel de la luz ambiente. El sistema se alimenta con un cargador de celular (5V) reciclado.
 El circuito esquemático es el siguiente:
 
-![Esquemático](/img/esquematico.png)
+![Esquemático](./docs/img/esquematico.png)
 
 ## Licencia
 
