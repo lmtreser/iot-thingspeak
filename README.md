@@ -9,6 +9,10 @@ Constituye un cambio radical en la calidad de vida de las personas en la socieda
 
 El canal público que recibe los datos desde el hardware utilizado en este ejemplo se puede acceder desde [thingspeak.com/channels/1328155](https://thingspeak.com/channels/1328155), el código fuente del proyecto está disponible en [GitHub](https://github.com/lmtreser/iot-thingspeak) y una versión online se ejecuta desde mi [blog](https://www.automatismos-mdq.com.ar/blog/tools/iot/).
 
+Los datos cargados actualmente son simulados, un pequeño *dataset* está disponible en `./src/dataset.csv`.
+
+![](./docs/img/Thingspeak_channel.png)
+
 ## Tecnologías utilizadas
 
 Para el desarrollo del cliente web se utilizó JavaScript junto a algunas bibliotecas:
